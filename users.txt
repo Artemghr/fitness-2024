@@ -1,0 +1,2 @@
+{"registration_id": 1, "class_id": 1, "user_name": "еуые", "phone_number": "+79855294018", "registration_time": "2024-11-24T15:31:15.745221+00:00"}
+{"registration_id": 2, "class_id": 1, "user_name": "GOOGLE", "phone_number": "+79855294018", "registration_time": "2024-11-24T15:36:30.318463+00:00"}
