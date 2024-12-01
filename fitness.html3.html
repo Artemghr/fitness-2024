@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Расписание занятий в фитнес-зале</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Расписание занятий</h1>
+        <ul id="class-schedule"></ul>
+    </div>
+
+    <script>
+        async function fetchClasses() {
+            try {
+                const response = await fetch('https://api.example.com/classes'); // Замени на свой API-URL
+                const data = await response.json();
+                displayClasses(data);
+            } catch (error) {
+                console.error('Ошибка при загрузке данных:', error);
+            }
+        }
+
+        function displayClasses(classes) {
+            const scheduleList = document.getElementById('class-schedule');
+            scheduleList.innerHTML = ''; // чистим список
+
+            classes.forEach(classItem => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${classItem.name} - ${classItem.time}`; // Пример. Настроить под свою структуру данных
+                scheduleList.appendChild(listItem);
+            });
+        }
+
+        fetchClasses();
+    </script>
+</body>
+</html>
