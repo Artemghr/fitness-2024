@@ -1,0 +1,22 @@
+{
+    "classes": [
+      {
+        "id": 1,
+        "name": "Yoga",
+        "time": "2023-10-01T09:00:00Z",
+        "duration": 60,
+        "instructor": "Alice",
+        "capacity": 20,
+        "participants": []
+      },
+      {
+        "id": 2,
+        "name": "HIIT",
+        "time": "2023-10-01T10:00:00Z",
+        "duration": 45,
+        "instructor": "Bob",
+        "capacity": 15,
+        "participants": []
+      }
+    ]
+  }
